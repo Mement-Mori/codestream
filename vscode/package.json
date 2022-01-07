@@ -636,7 +636,7 @@
 		"less": "3.9.0",
 		"less-loader": "5.0.0",
 		"mini-css-extract-plugin": "1.6.0",
-		"optimize-css-assets-webpack-plugin": "5.0.6",
+		"optimize-css-assets-webpack-plugin": "5.0.7",
 		"prettier": "1.19.1",
 		"terser-webpack-plugin": "1.4.4",
 		"ts-loader": "6.2.1",
