@@ -30,7 +30,7 @@
 		"preinstall": "pushd \"../shared/ui\" && npm install --no-save && popd"
 	},
 	"dependencies": {
-		"core-js": "2.6.9"
+		"core-js": "3.15.2"
 	},
 	"devDependencies": {
 		"@babel/cli": "7.15.7",
