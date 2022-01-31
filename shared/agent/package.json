@@ -111,7 +111,7 @@
 		"https-proxy-agent": "3.0.1",
 		"mocha": "6.2.0",
 		"mocha-teamcity-reporter": "3.0.0",
-		"mochapack": "2.1.2",
+		"mochapack": "2.1.4",
 		"pkg": "5.5.1",
 		"prettier": "1.19.1",
 		"randomstring": "1.1.5",
