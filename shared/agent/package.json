@@ -110,7 +110,7 @@
 		"clean-webpack-plugin": "4.0.0",
 		"cross-env": "5.2.0",
 		"esm": "3.2.25",
-		"filemanager-webpack-plugin": "6.1.7",
+		"filemanager-webpack-plugin": "7.0.0",
 		"graphql-tag": "2.12.6",
 		"https-proxy-agent": "3.0.1",
 		"jest-teamcity": "1.11.0",
