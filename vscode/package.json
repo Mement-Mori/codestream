@@ -641,7 +641,7 @@
 		"https-proxy-agent": "3.0.1",
 		"lodash": "4.17.21",
 		"node-abort-controller": "3.0.1",
-		"node-fetch": "2.6.7",
+		"node-fetch": "3.2.10",
 		"uuid": "3.3.2",
 		"vscode-languageclient": "5.2.1"
 	},
