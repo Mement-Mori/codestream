@@ -650,7 +650,7 @@
 		"node-fetch": "2.6.7",
 		"source-map-support": "0.5.21",
 		"uuid": "3.3.2",
-		"vscode-languageclient": "5.2.1"
+		"vscode-languageclient": "7.0.0"
 	},
 	"devDependencies": {
 		"@types/diff": "4.0.2",
