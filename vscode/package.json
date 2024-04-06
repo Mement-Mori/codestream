@@ -421,7 +421,7 @@
 		"@vscode/test-electron": "2.1.2",
 		"babel-plugin-styled-components": "2.0.2",
 		"esbuild": "0.20.1",
-		"eslint": "8.56.0",
+		"eslint": "9.0.0",
 		"eslint-filtered-fix": "0.3.0",
 		"eslint-import-resolver-typescript": "3.6.1",
 		"eslint-plugin-import": "2.29.1",
