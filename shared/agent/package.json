@@ -129,7 +129,7 @@
 		"cross-os": "1.5.0",
 		"esbuild": "0.20.1",
 		"esbuild-plugin-ignore": "1.1.1",
-		"eslint": "8.56.0",
+		"eslint": "9.0.0",
 		"eslint-filtered-fix": "0.3.0",
 		"eslint-import-resolver-typescript": "3.6.1",
 		"eslint-plugin-import": "2.29.1",
