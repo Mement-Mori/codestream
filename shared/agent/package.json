@@ -82,7 +82,7 @@
 		"sanitize-filename": "1.6.3",
 		"semver": "7.5.2",
 		"set-interval-async": "3.0.3",
-		"socketcluster-client": "16.0.1",
+		"socketcluster-client": "17.1.0",
 		"source-map-support": "0.5.21",
 		"stack-mapper": "0.2.2",
 		"stacktrace-parser": "0.1.10",
