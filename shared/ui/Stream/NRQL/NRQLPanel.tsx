@@ -113,9 +113,10 @@ const CodeText = styled.span`
 	font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
 	color: var(--text-color);
 `;
+
 interface SelectOptionType {
 	label: string;
-	value: string;
+	value: number;
 }
 
 const Option = (props: OptionProps) => {
@@ -139,6 +140,7 @@ export const NRQLPanel = (props: {
 	entryPoint: string;
 	entityGuid?: string;
 	query?: string;
+	hash?: string;
 	ide?: { name?: IdeNames; browserEngine?: BrowserEngines };
 }) => {
 	const supports = {
@@ -147,7 +149,11 @@ export const NRQLPanel = (props: {
 		enhancedEditor: true, // !props.ide || props?.ide?.browserEngine !== "JxBrowser",
 	};
 
-	const initialAccountId = props.accountId
+	const mruAccountId = localStorage.getItem(`nrql.accountMruByFile.${props.hash}`);
+
+	const initialAccountId = mruAccountId
+		? parseInt(mruAccountId)
+		: props.accountId
 		? props.accountId
 		: props.entityGuid
 		? parseId(props.entityGuid)?.accountId
@@ -196,9 +202,11 @@ export const NRQLPanel = (props: {
 					if (initialAccountId) {
 						foundAccount = result.accounts.find(_ => _.id === initialAccountId);
 					}
+
 					if (!foundAccount) {
 						foundAccount = result.accounts[0];
 					}
+
 					if (foundAccount) {
 						setSelectedAccount(formatSelectedAccount(foundAccount));
 					}
@@ -355,6 +363,21 @@ export const NRQLPanel = (props: {
 		}));
 	};
 
+	const handleAccountSelectionChangeCallback = (selection: SelectOptionType) => {
+		setSelectedAccount({
+			label: selection.label,
+			value: selection.value,
+		});
+
+		if (props.hash) {
+			try {
+				localStorage.setItem(`nrql.accountMruByFile.${props.hash}`, selection.value.toString());
+			} catch (ex) {
+				console.error(`Local storage not available`, ex);
+			}
+		}
+	};
+
 	return (
 		<>
 			<div id="modal-root"></div>
@@ -400,7 +423,7 @@ export const NRQLPanel = (props: {
 													hasMore: false,
 												};
 											}}
-											handleChangeCallback={setSelectedAccount}
+											handleChangeCallback={handleAccountSelectionChangeCallback}
 											customOption={Option}
 											tabIndex={1}
 											customWidth={entitySearchWidth?.toString()}
