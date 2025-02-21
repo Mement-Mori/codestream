@@ -128,7 +128,7 @@
 		"esbuild-plugin-ignore": "1.1.1",
 		"eslint": "8.57.0",
 		"eslint-filtered-fix": "0.3.0",
-		"eslint-import-resolver-typescript": "3.6.1",
+		"eslint-import-resolver-typescript": "3.8.0",
 		"eslint-plugin-import": "2.29.1",
 		"eslint-plugin-unused-imports": "3.2.0",
 		"esm": "3.2.25",
