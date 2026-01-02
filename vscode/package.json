@@ -350,7 +350,7 @@
 		"tsc-alias": "1.8.10",
 		"tsx": "4.10.5",
 		"typescript": "5.4.5",
-		"vsce": "2.6.7"
+		"vsce": "2.15.0"
 	},
 	"lint-staged": {
 		"*": [
