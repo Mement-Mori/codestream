@@ -331,7 +331,7 @@
 		"@vscode/test-electron": "2.1.2",
 		"babel-plugin-styled-components": "2.0.2",
 		"esbuild": "0.21.3",
-		"eslint": "8.57.0",
+		"eslint": "10.0.0",
 		"eslint-filtered-fix": "0.3.0",
 		"eslint-import-resolver-typescript": "3.6.1",
 		"eslint-plugin-import": "2.29.1",
@@ -350,7 +350,7 @@
 		"tsc-alias": "1.8.10",
 		"tsx": "4.10.5",
 		"typescript": "5.4.5",
-		"vsce": "2.6.7"
+		"vsce": "2.15.0"
 	},
 	"lint-staged": {
 		"*": [
